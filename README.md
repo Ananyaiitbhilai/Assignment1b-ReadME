@@ -28,7 +28,7 @@ We calculate the feature vector of the test image using the same HOG parameters 
 ### Reason why prototype has a fairly low accuracy
 
 The prototyping is a fairly rudimentary way of making predictions. By averaging out the feature vectors, we lose a lot of information and try to generalize a bit too much. There are images of fruits with image shots from multiple angles(rotated), trying to average out the prototypes of such images would be very wrong. <br>
-
+We didn't further classify the classes based on rotation (then total classes are 131x4).
 Hence it performs poorly when an image slightly different from the training set is presented to prototype model.  
   
 <img src="https://i.imgur.com/rOAfQuo.png" width="500">  
@@ -100,3 +100,4 @@ We get the following precision, recall, F1-score, support:<br>
   
 Our Graph of loss v/s no. of Epochs, as number of epochs increases, loss function decreases.Our trainig and validation Loss is depited in the graph<br>
 <img src="https://i.imgur.com/wnOoxPt.png" width="500px">
+<img src="https://i.imgur.com/iBgesCz.png" width="500px">
