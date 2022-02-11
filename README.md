@@ -33,7 +33,7 @@ Hence it performs poorly when an image slightly different from the training set 
   
 <img src="https://i.imgur.com/rOAfQuo.png" width="500">  
 <img src="https://i.imgur.com/vsVaXZ9.png" width="500"> 
-<img src="https://i.imgur.com/rOAfQuo.png" width="500"> 
+<img src="https://i.imgur.com/IMjbAiz.png" width="500"> 
 
 
 The overall accuracy of the model was 46.43% when it was tested against the Test dataset.
