@@ -69,6 +69,10 @@ Prediction: Tomato Cherry Red
 ```
 
 
+### Reason why KNN has more accuracy than prototype and lower than Simple Neural Network
+- Prototyping takes the distance of an image with the average euclidian distance calculated from a class rather than all the images in ecery class, which is the case in KNN.
+- KNN depends on the neighbuors only. It doesn’t even need a training phase. The target class is the class with more neighbors nearby.
+- ANN uses weights and change / transfer the weights of each neuron with respect to the input. So they need a larger training phase to get more accuracy.
 
 ## Neural Network
 
@@ -79,8 +83,7 @@ Prediction: Tomato Cherry Red
 5. Error prediction
 
 We have divided Our Trainind folder into 2 parts:- Training(80%) and Validation(20%). <br><br>
-We use the flattening technique which gives us the 
-<describe flattening> <br>
+We use the flattening technique which is used to convert a matrix into a 1-D array.
 We resize the image to 32x32.It is critical to resize our images properly because this neural network requires these dimensions. Each neural network will require different dimensions, so just be aware of this. Flattening the data allows us to pass the raw pixel intensities to the input layer neurons easily.  
 We get the length of feature vector as 32x32x3. Then we extract the fruit labels and normalize them.<br><br>
 We use label binarizer. At learning time, this simply consists in learning one regressor or binary classifier per class. In doing so, one needs to convert multi-class labels to binary labels (belong or does not belong to the class).<br><br>
