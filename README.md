@@ -99,5 +99,5 @@ We get the following precision, recall, F1-score, support:<br>
 <img src="https://i.imgur.com/SRkNHKp.png" width="500px">
   
 Our Graph of loss v/s no. of Epochs, as number of epochs increases, loss function decreases.Our trainig and validation Loss is depited in the graph<br>
-<img src="https://i.imgur.com/wnOoxPt.png" width="500px">
+<img src="https://i.imgur.com/wnOoxPt.png">
 <img src="https://i.imgur.com/iBgesCz.png" width="500px">
