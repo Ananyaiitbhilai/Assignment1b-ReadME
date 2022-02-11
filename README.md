@@ -27,7 +27,7 @@ We calculate the feature vector of the test image using the same HOG parameters 
 
 ### Reason why prototype has a fairly low accuracy
 
-The prototyping is a fairly rudimentary way of making predictions. By averaging out the feature vectors, we lose a lot of information and try to generalize a bit too much. There are images of fruits with image shots from multiple angles, trying to average out the prototypes of such images would be very wrong. <br>
+The prototyping is a fairly rudimentary way of making predictions. By averaging out the feature vectors, we lose a lot of information and try to generalize a bit too much. There are images of fruits with image shots from multiple angles(rotated), trying to average out the prototypes of such images would be very wrong. <br>
 
 Hence it performs poorly when an image slightly different from the training set is presented to prototype model.  
   
