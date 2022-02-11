@@ -70,8 +70,8 @@ Prediction: Tomato Cherry Red
 
 
 ### Reason why KNN has more accuracy than prototype and lower than Simple Neural Network
-- Prototyping takes the distance of an image with the average euclidian distance calculated from a class rather than all the images in ecery class, which is the case in KNN.
-- KNN depends on the neighbuors only. It doesn’t even need a training phase. The target class is the class with more neighbors nearby.
+- Prototyping takes the distance of an image with the average euclidian distance calculated from a class rather than all the images in every class, which is the case in KNN.
+- KNN depends on the neighbors only. It doesn’t even need a training phase. The target class is the class with more neighbors nearby.
 - ANN uses weights and change / transfer the weights of each neuron with respect to the input. So they need a larger training phase to get more accuracy.
 
 ## Neural Network
@@ -82,9 +82,9 @@ Prediction: Tomato Cherry Red
 4. Model validation and error calculation
 5. Error prediction
 
-We have divided Our Trainind folder into 2 parts:- Training(80%) and Validation(20%). <br><br>
+We have divided Our Training folder into 2 parts:- Training(80%) and Validation(20%). <br><br>
 We use the flattening technique which is used to convert a matrix into a 1-D array.
-We resize the image to 32x32.It is critical to resize our images properly because this neural network requires these dimensions. Each neural network will require different dimensions, so just be aware of this. Flattening the data allows us to pass the raw pixel intensities to the input layer neurons easily.  
+We resize the image to 32x32. It is critical to resize our images properly because this neural network requires these dimensions. Each neural network will require different dimensions, so just be aware of this. Flattening the data allows us to pass the raw pixel intensities to the input layer neurons easily.  
 We get the length of feature vector as 32x32x3. Then we extract the fruit labels and normalize them.<br><br>
 We use label binarizer. At learning time, this simply consists in learning one regressor or binary classifier per class. In doing so, one needs to convert multi-class labels to binary labels (belong or does not belong to the class).<br><br>
 Our ANN architecture looks like this:
@@ -98,7 +98,7 @@ We then save our model in the file `fruits-360_model_new5.h5` and test this mode
 We get the following precision, recall, F1-score, support:<br>
 <img src="https://i.imgur.com/SRkNHKp.png" width="500px">
   
-Our Graph of loss v/s no. of Epochs, as number of epochs increases, loss function decreases.Our trainig and validation Loss is depited in the graph<br>
+Our Graph of loss v/s no. of Epochs, as number of epochs increases, loss function decreases. Our training and validation loss is depicted in the graph.<br>
 <img src="https://i.imgur.com/wnOoxPt.png" width="500px"><br>
                                                              
 
@@ -106,7 +106,7 @@ We enter a test image from our test dataset `/Users/ananyahooda/Desktop/DS250 As
 <img src="https://i.imgur.com/UE9My4x.png">
 <img src="https://i.imgur.com/iBgesCz.png" width="500px">
 
-Accuracy is coming low for rotated images, `/Users/ananyahooda/Desktop/DS250 Assignment 1b/fruits-360_dataset/fruits-360/Test/Beetroot/r_182_100.jpg`, we get the following results and probablity graph:<br>
+The accuracy obtained for rotated images is low, `/Users/ananyahooda/Desktop/DS250 Assignment 1b/fruits-360_dataset/fruits-360/Test/Beetroot/r_182_100.jpg`, the following result and probability graph is obtained: <br>
 <img src="https://i.imgur.com/7jz32h8.png">
 <img src="https://i.imgur.com/FZhXYt8.png" width="500px">
 
