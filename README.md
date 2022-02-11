@@ -102,6 +102,6 @@ Our Graph of loss v/s no. of Epochs, as number of epochs increases, loss functio
 <img src="https://i.imgur.com/wnOoxPt.png" width="500px"><br>
                                                              
 
-We enter a test image `/Users/ananyahooda/Desktop/DS250 Assignment 1b/fruits-360_dataset/fruits-360/Test/Beetroot/129_100.jpg` and get the following output and probability graph:
+We enter a test image `/Users/ananyahooda/Desktop/DS250 Assignment 1b/fruits-360_dataset/fruits-360/Test/Beetroot/129_100.jpg` and get the following output and probability graph:<br>
 <img src="https://i.imgur.com/UE9My4x.png">
 <img src="https://i.imgur.com/iBgesCz.png" width="500px">
